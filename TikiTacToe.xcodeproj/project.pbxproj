@@ -1,0 +1,727 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		152BB4A325C188920039C670 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152BB4A225C188920039C670 /* AppDelegate.swift */; };
+		152BB4A925C188920039C670 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152BB4A825C188920039C670 /* GameScene.swift */; };
+		152BB4AB25C188920039C670 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152BB4AA25C188920039C670 /* GameViewController.swift */; };
+		152BB4AE25C188920039C670 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 152BB4AC25C188920039C670 /* Main.storyboard */; };
+		152BB4B025C188930039C670 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 152BB4AF25C188930039C670 /* Assets.xcassets */; };
+		152BB4BD25C189FA0039C670 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152BB4BC25C189FA0039C670 /* Grid.swift */; };
+		152BB4C125C18A290039C670 /* TileSet.sks in Resources */ = {isa = PBXBuildFile; fileRef = 152BB4C025C18A290039C670 /* TileSet.sks */; };
+		152BB4C625C18A320039C670 /* Landscape.sks in Resources */ = {isa = PBXBuildFile; fileRef = 152BB4C425C18A310039C670 /* Landscape.sks */; };
+		152BB4CA25C18B000039C670 /* StartGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152BB4C925C18B000039C670 /* StartGame.swift */; };
+		152BB4CD25C18B080039C670 /* EndGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152BB4CC25C18B080039C670 /* EndGame.swift */; };
+		152BB4D025C18B130039C670 /* PlayGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152BB4CF25C18B130039C670 /* PlayGame.swift */; };
+		152BB4D525C18BA10039C670 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 152BB4D425C18BA10039C670 /* LaunchScreen.storyboard */; };
+		1537C08B25E6B63C0071D746 /* LevelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1537C08A25E6B63C0071D746 /* LevelsViewController.swift */; };
+		1546479F25C2FEB4000D8B90 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1546479E25C2FEB4000D8B90 /* NotificationService.swift */; };
+		154647A325C2FEB4000D8B90 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1546479C25C2FEB4000D8B90 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		154647BB25C30D38000D8B90 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154647BA25C30D37000D8B90 /* Structs.swift */; };
+		156D460D25C4391700878FA1 /* Portrait.sks in Resources */ = {isa = PBXBuildFile; fileRef = 156D460C25C4391700878FA1 /* Portrait.sks */; };
+		156FA65425CC12A700768FAC /* BackSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156FA65325CC12A700768FAC /* BackSound.swift */; };
+		156FA65E25CC31DD00768FAC /* sound1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 156FA65D25CC31DD00768FAC /* sound1.mp3 */; };
+		156FA66225CC31E500768FAC /* sound2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 156FA66125CC31E500768FAC /* sound2.mp3 */; };
+		156FA66625CC31EC00768FAC /* sound4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 156FA66525CC31EC00768FAC /* sound4.mp3 */; };
+		156FA66A25CC31F500768FAC /* sound3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 156FA66925CC31F500768FAC /* sound3.mp3 */; };
+		1571D20125CAF345004432A0 /* ScoreboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1571D20025CAF345004432A0 /* ScoreboardViewController.swift */; };
+		158EB4B425DA9761005861E3 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158EB4B325DA9761005861E3 /* Player.swift */; };
+		158EB4B825DA9781005861E3 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158EB4B725DA9781005861E3 /* Step.swift */; };
+		15CAD55925C1B78900ABE0EC /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CAD55825C1B78900ABE0EC /* MainMenuViewController.swift */; };
+		15EA985725E95A710063BFC9 /* LevelsPhone.sks in Resources */ = {isa = PBXBuildFile; fileRef = 15EA985625E95A710063BFC9 /* LevelsPhone.sks */; };
+		15EA985D25E960AB0063BFC9 /* LevelsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EA985C25E960AA0063BFC9 /* LevelsScene.swift */; };
+		15EA986B25E96CCA0063BFC9 /* LevelsPad.sks in Resources */ = {isa = PBXBuildFile; fileRef = 15EA986A25E96CCA0063BFC9 /* LevelsPad.sks */; };
+		9BBE3ABE390CEF09CA19FCFF /* Pods_TikiTacToe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4021058A7715DBA473B6B814 /* Pods_TikiTacToe.framework */; };
+		B465B21DB7681ABC0E11608A /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38CF98F9874BF035D8254C74 /* Pods_OneSignalNotificationServiceExtension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		154647A125C2FEB4000D8B90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 152BB49725C188920039C670 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1546479B25C2FEB4000D8B90;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		154647A425C2FEB4000D8B90 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				154647A325C2FEB4000D8B90 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0AAD81942A6A2A6E7119C0B2 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		152BB49F25C188920039C670 /* TikiTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikiTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		152BB4A225C188920039C670 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		152BB4A825C188920039C670 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		152BB4AA25C188920039C670 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		152BB4AD25C188920039C670 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		152BB4AF25C188930039C670 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		152BB4B125C188930039C670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		152BB4BC25C189FA0039C670 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		152BB4C025C18A290039C670 /* TileSet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TileSet.sks; sourceTree = "<group>"; };
+		152BB4C425C18A310039C670 /* Landscape.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Landscape.sks; sourceTree = "<group>"; };
+		152BB4C925C18B000039C670 /* StartGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGame.swift; sourceTree = "<group>"; };
+		152BB4CC25C18B080039C670 /* EndGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGame.swift; sourceTree = "<group>"; };
+		152BB4CF25C18B130039C670 /* PlayGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayGame.swift; sourceTree = "<group>"; };
+		152BB4D425C18BA10039C670 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1537C08A25E6B63C0071D746 /* LevelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsViewController.swift; sourceTree = "<group>"; };
+		1546479C25C2FEB4000D8B90 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1546479E25C2FEB4000D8B90 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		154647A025C2FEB4000D8B90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		154647B025C2FF43000D8B90 /* TikiTacToe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TikiTacToe.entitlements; sourceTree = "<group>"; };
+		154647B325C2FFE5000D8B90 /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
+		154647BA25C30D37000D8B90 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
+		156D460C25C4391700878FA1 /* Portrait.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Portrait.sks; sourceTree = "<group>"; };
+		156FA65325CC12A700768FAC /* BackSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackSound.swift; sourceTree = "<group>"; };
+		156FA65D25CC31DD00768FAC /* sound1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound1.mp3; sourceTree = "<group>"; };
+		156FA66125CC31E500768FAC /* sound2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound2.mp3; sourceTree = "<group>"; };
+		156FA66525CC31EC00768FAC /* sound4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound4.mp3; sourceTree = "<group>"; };
+		156FA66925CC31F500768FAC /* sound3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound3.mp3; sourceTree = "<group>"; };
+		1571D20025CAF345004432A0 /* ScoreboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardViewController.swift; sourceTree = "<group>"; };
+		158EB4B325DA9761005861E3 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		158EB4B725DA9781005861E3 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		15CAD55825C1B78900ABE0EC /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		15EA985625E95A710063BFC9 /* LevelsPhone.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LevelsPhone.sks; sourceTree = "<group>"; };
+		15EA985C25E960AA0063BFC9 /* LevelsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsScene.swift; sourceTree = "<group>"; };
+		15EA986A25E96CCA0063BFC9 /* LevelsPad.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LevelsPad.sks; sourceTree = "<group>"; };
+		38CF98F9874BF035D8254C74 /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4021058A7715DBA473B6B814 /* Pods_TikiTacToe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TikiTacToe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73C04400548E6634389C6647 /* Pods-TikiTacToe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikiTacToe.release.xcconfig"; path = "Target Support Files/Pods-TikiTacToe/Pods-TikiTacToe.release.xcconfig"; sourceTree = "<group>"; };
+		ADE3C10C9C4CA4AD5D78B847 /* Pods-TikiTacToe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikiTacToe.debug.xcconfig"; path = "Target Support Files/Pods-TikiTacToe/Pods-TikiTacToe.debug.xcconfig"; sourceTree = "<group>"; };
+		F7F9058139FAAC85893A5D84 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		152BB49C25C188920039C670 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BBE3ABE390CEF09CA19FCFF /* Pods_TikiTacToe.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1546479925C2FEB4000D8B90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B465B21DB7681ABC0E11608A /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		152BB49625C188920039C670 = {
+			isa = PBXGroup;
+			children = (
+				152BB4A125C188920039C670 /* TikiTacToe */,
+				1546479D25C2FEB4000D8B90 /* OneSignalNotificationServiceExtension */,
+				152BB4A025C188920039C670 /* Products */,
+				C55F4F2ED5E58DC8F98B04E4 /* Pods */,
+				F9428E0D92187FF4EC990085 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		152BB4A025C188920039C670 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				152BB49F25C188920039C670 /* TikiTacToe.app */,
+				1546479C25C2FEB4000D8B90 /* OneSignalNotificationServiceExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		152BB4A125C188920039C670 /* TikiTacToe */ = {
+			isa = PBXGroup;
+			children = (
+				154647B025C2FF43000D8B90 /* TikiTacToe.entitlements */,
+				152BB4A225C188920039C670 /* AppDelegate.swift */,
+				152BB4AC25C188920039C670 /* Main.storyboard */,
+				152BB4D425C18BA10039C670 /* LaunchScreen.storyboard */,
+				152BB4AF25C188930039C670 /* Assets.xcassets */,
+				152BB4B125C188930039C670 /* Info.plist */,
+				15ED4C6F25C8432900FCB599 /* Game */,
+				152BB4BB25C189DA0039C670 /* GameStates */,
+				15CC619225D6B60E00BAD529 /* Controllers */,
+				15B5FE6125C95D4A00D8CF32 /* Sounds */,
+				152BB4BA25C189CD0039C670 /* Scenes */,
+			);
+			path = TikiTacToe;
+			sourceTree = "<group>";
+		};
+		152BB4BA25C189CD0039C670 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				15EA985625E95A710063BFC9 /* LevelsPhone.sks */,
+				15EA986A25E96CCA0063BFC9 /* LevelsPad.sks */,
+				156D460C25C4391700878FA1 /* Portrait.sks */,
+				152BB4C425C18A310039C670 /* Landscape.sks */,
+				152BB4C025C18A290039C670 /* TileSet.sks */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		152BB4BB25C189DA0039C670 /* GameStates */ = {
+			isa = PBXGroup;
+			children = (
+				152BB4C925C18B000039C670 /* StartGame.swift */,
+				152BB4CF25C18B130039C670 /* PlayGame.swift */,
+				152BB4CC25C18B080039C670 /* EndGame.swift */,
+			);
+			path = GameStates;
+			sourceTree = "<group>";
+		};
+		1546479D25C2FEB4000D8B90 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				154647B325C2FFE5000D8B90 /* OneSignalNotificationServiceExtension.entitlements */,
+				1546479E25C2FEB4000D8B90 /* NotificationService.swift */,
+				154647A025C2FEB4000D8B90 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		15B5FE6125C95D4A00D8CF32 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				156FA65325CC12A700768FAC /* BackSound.swift */,
+				156FA65D25CC31DD00768FAC /* sound1.mp3 */,
+				156FA66125CC31E500768FAC /* sound2.mp3 */,
+				156FA66925CC31F500768FAC /* sound3.mp3 */,
+				156FA66525CC31EC00768FAC /* sound4.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		15CC619225D6B60E00BAD529 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				152BB4AA25C188920039C670 /* GameViewController.swift */,
+				1537C08A25E6B63C0071D746 /* LevelsViewController.swift */,
+				15CAD55825C1B78900ABE0EC /* MainMenuViewController.swift */,
+				1571D20025CAF345004432A0 /* ScoreboardViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		15EA987025E972A60063BFC9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				154647BA25C30D37000D8B90 /* Structs.swift */,
+				158EB4B325DA9761005861E3 /* Player.swift */,
+				158EB4B725DA9781005861E3 /* Step.swift */,
+				152BB4BC25C189FA0039C670 /* Grid.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		15ED4C6F25C8432900FCB599 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				15EA987025E972A60063BFC9 /* Helpers */,
+				152BB4A825C188920039C670 /* GameScene.swift */,
+				15EA985C25E960AA0063BFC9 /* LevelsScene.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		C55F4F2ED5E58DC8F98B04E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ADE3C10C9C4CA4AD5D78B847 /* Pods-TikiTacToe.debug.xcconfig */,
+				73C04400548E6634389C6647 /* Pods-TikiTacToe.release.xcconfig */,
+				0AAD81942A6A2A6E7119C0B2 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				F7F9058139FAAC85893A5D84 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F9428E0D92187FF4EC990085 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4021058A7715DBA473B6B814 /* Pods_TikiTacToe.framework */,
+				38CF98F9874BF035D8254C74 /* Pods_OneSignalNotificationServiceExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		152BB49E25C188920039C670 /* TikiTacToe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 152BB4B425C188930039C670 /* Build configuration list for PBXNativeTarget "TikiTacToe" */;
+			buildPhases = (
+				598AD0021FC371B26938059B /* [CP] Check Pods Manifest.lock */,
+				152BB49B25C188920039C670 /* Sources */,
+				152BB49C25C188920039C670 /* Frameworks */,
+				152BB49D25C188920039C670 /* Resources */,
+				3D10A070FEFF615A48E23BBE /* [CP] Embed Pods Frameworks */,
+				154647A425C2FEB4000D8B90 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				154647A225C2FEB4000D8B90 /* PBXTargetDependency */,
+			);
+			name = TikiTacToe;
+			productName = TikiTacToe;
+			productReference = 152BB49F25C188920039C670 /* TikiTacToe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1546479B25C2FEB4000D8B90 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 154647A725C2FEB4000D8B90 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				B97FE8C89C821F06A06EA47E /* [CP] Check Pods Manifest.lock */,
+				1546479825C2FEB4000D8B90 /* Sources */,
+				1546479925C2FEB4000D8B90 /* Frameworks */,
+				1546479A25C2FEB4000D8B90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 1546479C25C2FEB4000D8B90 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		152BB49725C188920039C670 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					152BB49E25C188920039C670 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					1546479B25C2FEB4000D8B90 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 152BB49A25C188920039C670 /* Build configuration list for PBXProject "TikiTacToe" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 152BB49625C188920039C670;
+			productRefGroup = 152BB4A025C188920039C670 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				152BB49E25C188920039C670 /* TikiTacToe */,
+				1546479B25C2FEB4000D8B90 /* OneSignalNotificationServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		152BB49D25C188920039C670 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				152BB4C125C18A290039C670 /* TileSet.sks in Resources */,
+				156FA66625CC31EC00768FAC /* sound4.mp3 in Resources */,
+				156FA66225CC31E500768FAC /* sound2.mp3 in Resources */,
+				152BB4AE25C188920039C670 /* Main.storyboard in Resources */,
+				15EA986B25E96CCA0063BFC9 /* LevelsPad.sks in Resources */,
+				15EA985725E95A710063BFC9 /* LevelsPhone.sks in Resources */,
+				152BB4D525C18BA10039C670 /* LaunchScreen.storyboard in Resources */,
+				156D460D25C4391700878FA1 /* Portrait.sks in Resources */,
+				156FA65E25CC31DD00768FAC /* sound1.mp3 in Resources */,
+				152BB4C625C18A320039C670 /* Landscape.sks in Resources */,
+				152BB4B025C188930039C670 /* Assets.xcassets in Resources */,
+				156FA66A25CC31F500768FAC /* sound3.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1546479A25C2FEB4000D8B90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D10A070FEFF615A48E23BBE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TikiTacToe/Pods-TikiTacToe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TikiTacToe/Pods-TikiTacToe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TikiTacToe/Pods-TikiTacToe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		598AD0021FC371B26938059B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TikiTacToe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B97FE8C89C821F06A06EA47E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		152BB49B25C188920039C670 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15EA985D25E960AB0063BFC9 /* LevelsScene.swift in Sources */,
+				154647BB25C30D38000D8B90 /* Structs.swift in Sources */,
+				15CAD55925C1B78900ABE0EC /* MainMenuViewController.swift in Sources */,
+				152BB4A925C188920039C670 /* GameScene.swift in Sources */,
+				158EB4B825DA9781005861E3 /* Step.swift in Sources */,
+				156FA65425CC12A700768FAC /* BackSound.swift in Sources */,
+				158EB4B425DA9761005861E3 /* Player.swift in Sources */,
+				152BB4CA25C18B000039C670 /* StartGame.swift in Sources */,
+				152BB4BD25C189FA0039C670 /* Grid.swift in Sources */,
+				152BB4CD25C18B080039C670 /* EndGame.swift in Sources */,
+				152BB4AB25C188920039C670 /* GameViewController.swift in Sources */,
+				1571D20125CAF345004432A0 /* ScoreboardViewController.swift in Sources */,
+				1537C08B25E6B63C0071D746 /* LevelsViewController.swift in Sources */,
+				152BB4D025C18B130039C670 /* PlayGame.swift in Sources */,
+				152BB4A325C188920039C670 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1546479825C2FEB4000D8B90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1546479F25C2FEB4000D8B90 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		154647A225C2FEB4000D8B90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1546479B25C2FEB4000D8B90 /* OneSignalNotificationServiceExtension */;
+			targetProxy = 154647A125C2FEB4000D8B90 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		152BB4AC25C188920039C670 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				152BB4AD25C188920039C670 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		152BB4B225C188930039C670 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		152BB4B325C188930039C670 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		152BB4B525C188930039C670 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADE3C10C9C4CA4AD5D78B847 /* Pods-TikiTacToe.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TikiTacToe/TikiTacToe.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.2;
+				DEVELOPMENT_TEAM = 888BRJ9FD6;
+				INFOPLIST_FILE = TikiTacToe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eg.TikiTacToe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		152BB4B625C188930039C670 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73C04400548E6634389C6647 /* Pods-TikiTacToe.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TikiTacToe/TikiTacToe.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.2;
+				DEVELOPMENT_TEAM = 888BRJ9FD6;
+				INFOPLIST_FILE = TikiTacToe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eg.TikiTacToe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		154647A525C2FEB4000D8B90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AAD81942A6A2A6E7119C0B2 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.2;
+				DEVELOPMENT_TEAM = 888BRJ9FD6;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eg.TikiTacToe.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		154647A625C2FEB4000D8B90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7F9058139FAAC85893A5D84 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.2;
+				DEVELOPMENT_TEAM = 888BRJ9FD6;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eg.TikiTacToe.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		152BB49A25C188920039C670 /* Build configuration list for PBXProject "TikiTacToe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				152BB4B225C188930039C670 /* Debug */,
+				152BB4B325C188930039C670 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		152BB4B425C188930039C670 /* Build configuration list for PBXNativeTarget "TikiTacToe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				152BB4B525C188930039C670 /* Debug */,
+				152BB4B625C188930039C670 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		154647A725C2FEB4000D8B90 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				154647A525C2FEB4000D8B90 /* Debug */,
+				154647A625C2FEB4000D8B90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 152BB49725C188920039C670 /* Project object */;
+}
